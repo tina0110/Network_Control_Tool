@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Control Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Network Control Tool</h1>
+        <ul>
+            <li><a href="#img">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#developers">Developers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="img" class="section">
+        <img src="./img1.png" alt="img one" class="one">
+        <img src="./img2.png" alt="img two" class="two">
+        <img src="./img3.png" alt="img three" class="three">
+    </div>
+    <div id="about" class="section">
+        <h2>About Network Control Tool</h2>
+        <p>The Network Control Tool is a sophisticated GUI application developed as part of the ORDNANCE FACTORY DEHRADUN (OFD) summer training program in 2024. This tool is designed to facilitate the monitoring and management of network devices using their IP addresses. It offers a comprehensive set of features aimed at optimizing network diagnostics and management tasks.</p>
+            
+        <ul>Features: <br><br>
+            <li><b>Automated Diagnostics:</b> <br>
+                Run Diagnostics: Initiates a network scan to check the connectivity status of registered IP addresses. The tool displays which devices are disconnected or experiencing issues.
+            </li> <br>
+            <li><b>IP Address Management:</b> <br>
+                Add IP Address: Allows users to input new IP addresses along with associated details such as priority, location, and remarks. These entries are stored in a structured SQLite database.
+            </li> <br>
+            <li><b>Modify IP Address:</b> <br>
+                Provides functionalities to edit or delete existing IP address entries. Users can update details such as IP address, priority, location, and remarks directly from the GUI.
+            </li> <br>
+            <li><b>Interval Management:</b> <br>
+                Set Time Interval: Enables users to specify the interval (in seconds) at which the network scans and diagnostics should automatically repeat. This ensures continuous monitoring without constant user intervention.
+            </li> <br>
+            <li><b>User-friendly Interface:</b> <br>
+                Responsive Design: Implemented using Tkinter library in Python, ensuring a user-friendly and intuitive graphical interface. It includes features like a gradient background, customizable navbar, and pop-up dialogs for alerts and notifications.
+            </li> <br>
+            <li><b>Developer's Corner:</b> <br>
+                Highlights the contributions of the development team, including responsibilities and technologies used by each member. This section acknowledges the effort and expertise put into creating and testing the Network Control Tool.
+            </li> <br>
+        </ul>
+        <h2>How It Works:</h2>
+            
+        <p>The Network Control Tool utilizes a combination of backend logic and database operations to manage IP addresses and their associated details. It employs threading for concurrent operations, ensuring that the GUI remains responsive during network scans and database transactions. The SQLite database (`ip_address.db`) stores all IP address entries securely and facilitates efficient data retrieval and modification.</p>
+
+        <h2>Instructions:</h2>
+        <ul>
+            <li><b>Run Diagnostics -</b> starts network scan and prompts the disconnected nodes. It will repeat the diagnostics of all network after mentioned time interval.</li>
+            <li><b>Add IP Address -</b> to input new IP addresses, priority, location, and remarks.</li>
+            <li><b>Modify IP Address -</b> to edit or delete existing IP entries.</li>
+            <li><b>Terminate Diagnostics -</b> to stop ongoing diagnostics.</li>
+            <li><b>Set Time Interval -</b> to specify automatic pinging intervals (in seconds).</li>
+        </ul>
+            
+        <h2>Conclusion:</h2>
+            
+        <p>The Network Control Tool is a testament to effective collaboration and innovation in network management. Developed by a team of dedicated interns during the OFD summer training program, it represents a practical solution for automating network diagnostics and enhancing operational efficiency. Whether used in educational settings, research institutions, or industrial environments, the tool stands ready to support robust network monitoring and management needs.</p>
+    </div>
+
+    <div id="download" class="section">
+
+        <h2>You can download the NETWORK CONTROL TOOL below:</h2>
+        <div class="grid">
+            <div class="onegrid edit">
+                <h3>For Windows:</h3>
+                <a href="./dist.zip" download="Network Control Tool">
+                    <button>Download main.exe for Windows</button>
+                </a>
+            </div>
+
+            <div class="twogrid edit">
+                <h3>For Linux:</h3>
+                <a href="./Linux Setup Network Control Tool.zip" download="Network Control Tool">
+                    <button>Download main.exe for Linux</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="developers" class="section">
+        <h2>Developers</h2>
+        <div class="outer">
+            <div class="dev">
+                <img src="./male.jpeg" alt="profile">
+                <p>Mayank Nayal</p>
+            </div>
+            <div class="dev">
+                <img src="./male.jpeg" alt="profile">
+                <p>Divyansh Negi</p>
+            </div>
+            <div class="dev">
+                <img src="./female.jpeg" alt="profile">
+                <p>Tina Mathpal</p>
+            </div>
+            <div class="dev">
+                <img src="./male.jpeg" alt="profile">
+                <p>Mohit Aditya</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p>For any inquiries or support, please contact us at:</p>
+        <div class="contact-info">
+            <p>Email: mayanknayal5306069@gmail.com</p>
+            <p>Email: divyanshnegi268@gmail.com</p>
+            <p>Phone: +91 8171216020</p>
+            <p>Address: Dehradun, Uttarakhand</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Network Control Tool. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

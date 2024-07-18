@@ -1,0 +1,144 @@
+
+body {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #003366;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+/* Styling for content sections */
+.section {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 200px;
+    margin-top: 30px;
+    border-radius: 20px;
+    /* background: rgba(255, 255, 255, 0.2); */
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.section h2 {
+    margin-top: 0;
+    text-align: center;
+}
+/* Footer styling */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position:sticky;
+    bottom: 0;
+    width: 100%;
+}
+/* Contact section enhancements */
+.contact-info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* editing of images */
+
+#img {
+    position: relative;
+    height: 600px;
+}
+#img img {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+#img img:hover {
+    transform: scale(1.05);
+}
+
+.one {
+    top: 25px;
+    left: 30px;
+    width: 220px;
+    height: auto;
+}
+.two {
+    bottom: 25px;
+    left: 280px;
+    width: 250px;
+    height: auto;
+}
+.three {
+    top: 110px;
+    right: 25px;
+    width: 500px;
+    height: auto;
+}
+
+/* about section  */
+
+
+#download {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.edit button {
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    background-color: #003366;
+    transition: transform 0.3s ease-in-out;
+}
+
+.edit button:hover {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+/* developers */
+
+.outer {
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
